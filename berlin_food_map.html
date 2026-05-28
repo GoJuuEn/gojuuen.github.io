@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9bd7decaa78780d91306bd530055e74c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9bd7decaa78780d91306bd530055e74c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9bd7decaa78780d91306bd530055e74c = L.map(
+                "map_9bd7decaa78780d91306bd530055e74c",
+                {
+                    center: [52.5109, 13.405],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8e961ad48341bcb7604df31e5cf205b4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9bd7decaa78780d91306bd530055e74c);
+        
+    
+            var marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d = L.markerClusterGroup(
+                {}
+            );
+            map_9bd7decaa78780d91306bd530055e74c.addLayer(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+            var marker_34043a59b20cb13570fc4be9450bf8cd = L.marker(
+                [52.5109, 13.4297],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_39629db970bd5741bbbeca23ed8b0f8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d04367e5e90f10ccd79e451e4bf46fd8 = $(`<div id="html_d04367e5e90f10ccd79e451e4bf46fd8" style="width: 100.0%; height: 100.0%;"><b>a&o Berlin Mitte</b><br>Hotel</div>`)[0];
+            popup_39629db970bd5741bbbeca23ed8b0f8d.setContent(html_d04367e5e90f10ccd79e451e4bf46fd8);
+        
+
+        marker_34043a59b20cb13570fc4be9450bf8cd.bindPopup(popup_39629db970bd5741bbbeca23ed8b0f8d)
+        ;
+
+        
+    
+    
+            marker_34043a59b20cb13570fc4be9450bf8cd.bindTooltip(
+                `<div>
+                     a&o Berlin Mitte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2afb3129530e292e3de7695d61177c16 = L.marker(
+                [52.4988, 13.432],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_c0c668ade5bbb67933d0ed977301a2c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a938394d4fb90793af386fa387370d5f = $(`<div id="html_a938394d4fb90793af386fa387370d5f" style="width: 100.0%; height: 100.0%;"><b>Annelies</b><br>Must Spot</div>`)[0];
+            popup_c0c668ade5bbb67933d0ed977301a2c0.setContent(html_a938394d4fb90793af386fa387370d5f);
+        
+
+        marker_2afb3129530e292e3de7695d61177c16.bindPopup(popup_c0c668ade5bbb67933d0ed977301a2c0)
+        ;
+
+        
+    
+    
+            marker_2afb3129530e292e3de7695d61177c16.bindTooltip(
+                `<div>
+                     Annelies
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_513e9c89ef8b38c5fbfe7de011d41412 = L.marker(
+                [52.4978, 13.4311],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_68d99447a1ddfbcb259f9a504dc93718 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63573ec2130d01f03fef33261bfcfff3 = $(`<div id="html_63573ec2130d01f03fef33261bfcfff3" style="width: 100.0%; height: 100.0%;"><b>Romeo's Sandwiches</b><br>Sandwiches</div>`)[0];
+            popup_68d99447a1ddfbcb259f9a504dc93718.setContent(html_63573ec2130d01f03fef33261bfcfff3);
+        
+
+        marker_513e9c89ef8b38c5fbfe7de011d41412.bindPopup(popup_68d99447a1ddfbcb259f9a504dc93718)
+        ;
+
+        
+    
+    
+            marker_513e9c89ef8b38c5fbfe7de011d41412.bindTooltip(
+                `<div>
+                     Romeo's Sandwiches
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3c5e4e29df693b3dbc83c96d6b89af0 = L.marker(
+                [52.4985, 13.4348],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_9620dfd743b3cc1d2cc09310d56966f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_886bbf5b72acc56ca2b06507792c9426 = $(`<div id="html_886bbf5b72acc56ca2b06507792c9426" style="width: 100.0%; height: 100.0%;"><b>Ma-Makan</b><br>Asian</div>`)[0];
+            popup_9620dfd743b3cc1d2cc09310d56966f4.setContent(html_886bbf5b72acc56ca2b06507792c9426);
+        
+
+        marker_a3c5e4e29df693b3dbc83c96d6b89af0.bindPopup(popup_9620dfd743b3cc1d2cc09310d56966f4)
+        ;
+
+        
+    
+    
+            marker_a3c5e4e29df693b3dbc83c96d6b89af0.bindTooltip(
+                `<div>
+                     Ma-Makan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_002883a1c293771890779688c4bcfeee = L.marker(
+                [52.5012, 13.4248],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_4013d2c5a043523c7520df555ae5e191 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbafd8e5501bf178aacba1488365bed5 = $(`<div id="html_dbafd8e5501bf178aacba1488365bed5" style="width: 100.0%; height: 100.0%;"><b>The Bun Society</b><br>Burger</div>`)[0];
+            popup_4013d2c5a043523c7520df555ae5e191.setContent(html_dbafd8e5501bf178aacba1488365bed5);
+        
+
+        marker_002883a1c293771890779688c4bcfeee.bindPopup(popup_4013d2c5a043523c7520df555ae5e191)
+        ;
+
+        
+    
+    
+            marker_002883a1c293771890779688c4bcfeee.bindTooltip(
+                `<div>
+                     The Bun Society
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88b1c575001901698604ee02d20e5d2a = L.marker(
+                [52.4899, 13.3888],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_ac03052f668e3ba8962dd907f5c214f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_154e9c7e255f7449cf87bd2346cb619a = $(`<div id="html_154e9c7e255f7449cf87bd2346cb619a" style="width: 100.0%; height: 100.0%;"><b>Munchies Kreuzberg</b><br>Fast Food</div>`)[0];
+            popup_ac03052f668e3ba8962dd907f5c214f1.setContent(html_154e9c7e255f7449cf87bd2346cb619a);
+        
+
+        marker_88b1c575001901698604ee02d20e5d2a.bindPopup(popup_ac03052f668e3ba8962dd907f5c214f1)
+        ;
+
+        
+    
+    
+            marker_88b1c575001901698604ee02d20e5d2a.bindTooltip(
+                `<div>
+                     Munchies Kreuzberg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b7e0459f6b2d3c2c1fb92bc7d45e059 = L.marker(
+                [52.5055, 13.4498],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_de8272ab70ba18249d1325f838e50750 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba952b91d6020342648d01dd9a11210b = $(`<div id="html_ba952b91d6020342648d01dd9a11210b" style="width: 100.0%; height: 100.0%;"><b>Brasserie Dandelion</b><br>Donkey Soufflé</div>`)[0];
+            popup_de8272ab70ba18249d1325f838e50750.setContent(html_ba952b91d6020342648d01dd9a11210b);
+        
+
+        marker_4b7e0459f6b2d3c2c1fb92bc7d45e059.bindPopup(popup_de8272ab70ba18249d1325f838e50750)
+        ;
+
+        
+    
+    
+            marker_4b7e0459f6b2d3c2c1fb92bc7d45e059.bindTooltip(
+                `<div>
+                     Brasserie Dandelion
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58a5fd59ec7fd712cf75ddef243c138c = L.marker(
+                [52.5068, 13.4388],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_8a5f51ffaefc9627ffbb7477441b8679 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee17e2e762edb16a22ee1d02739518c1 = $(`<div id="html_ee17e2e762edb16a22ee1d02739518c1" style="width: 100.0%; height: 100.0%;"><b>Yume Japanese Café</b><br>Cafe</div>`)[0];
+            popup_8a5f51ffaefc9627ffbb7477441b8679.setContent(html_ee17e2e762edb16a22ee1d02739518c1);
+        
+
+        marker_58a5fd59ec7fd712cf75ddef243c138c.bindPopup(popup_8a5f51ffaefc9627ffbb7477441b8679)
+        ;
+
+        
+    
+    
+            marker_58a5fd59ec7fd712cf75ddef243c138c.bindTooltip(
+                `<div>
+                     Yume Japanese Café
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5dcca9d195f2cd5377dd703af908e6c1 = L.marker(
+                [52.5155, 13.4049],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_322aea68bcb24d0bb56b7b45b5fdc8f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39a441ee5cff65079954beebcceff732 = $(`<div id="html_39a441ee5cff65079954beebcceff732" style="width: 100.0%; height: 100.0%;"><b>44 Brekkie</b><br>Breakfast</div>`)[0];
+            popup_322aea68bcb24d0bb56b7b45b5fdc8f4.setContent(html_39a441ee5cff65079954beebcceff732);
+        
+
+        marker_5dcca9d195f2cd5377dd703af908e6c1.bindPopup(popup_322aea68bcb24d0bb56b7b45b5fdc8f4)
+        ;
+
+        
+    
+    
+            marker_5dcca9d195f2cd5377dd703af908e6c1.bindTooltip(
+                `<div>
+                     44 Brekkie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d791ab0d0a52e39dc1f19c843b69c26 = L.marker(
+                [52.521, 13.413],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_4bae45b6b2d84adf510ec8a2dad7e268 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_922a171b1c3c046b2387f78d8bbc4bf6 = $(`<div id="html_922a171b1c3c046b2387f78d8bbc4bf6" style="width: 100.0%; height: 100.0%;"><b>Doughnut Time</b><br>Dessert</div>`)[0];
+            popup_4bae45b6b2d84adf510ec8a2dad7e268.setContent(html_922a171b1c3c046b2387f78d8bbc4bf6);
+        
+
+        marker_3d791ab0d0a52e39dc1f19c843b69c26.bindPopup(popup_4bae45b6b2d84adf510ec8a2dad7e268)
+        ;
+
+        
+    
+    
+            marker_3d791ab0d0a52e39dc1f19c843b69c26.bindTooltip(
+                `<div>
+                     Doughnut Time
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cfe583a408cbb7e7049680374291744 = L.marker(
+                [52.525, 13.401],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_e880237e3eec5c27cce0c37f21f4f1dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a03c064fba4137f3413c5cd34fd90f27 = $(`<div id="html_a03c064fba4137f3413c5cd34fd90f27" style="width: 100.0%; height: 100.0%;"><b>EVEN</b><br>Cafe</div>`)[0];
+            popup_e880237e3eec5c27cce0c37f21f4f1dd.setContent(html_a03c064fba4137f3413c5cd34fd90f27);
+        
+
+        marker_3cfe583a408cbb7e7049680374291744.bindPopup(popup_e880237e3eec5c27cce0c37f21f4f1dd)
+        ;
+
+        
+    
+    
+            marker_3cfe583a408cbb7e7049680374291744.bindTooltip(
+                `<div>
+                     EVEN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7e652b24f0873f054e21367b2235457 = L.marker(
+                [52.5186, 13.376],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_e1d4426db6710421175e68afe2cff765 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_843eb20555f91a47f4c8e34f27069449 = $(`<div id="html_843eb20555f91a47f4c8e34f27069449" style="width: 100.0%; height: 100.0%;"><b>Slim Chickens</b><br>Chicken</div>`)[0];
+            popup_e1d4426db6710421175e68afe2cff765.setContent(html_843eb20555f91a47f4c8e34f27069449);
+        
+
+        marker_a7e652b24f0873f054e21367b2235457.bindPopup(popup_e1d4426db6710421175e68afe2cff765)
+        ;
+
+        
+    
+    
+            marker_a7e652b24f0873f054e21367b2235457.bindTooltip(
+                `<div>
+                     Slim Chickens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8cd6231f2bb1dc60017b0bf636e558f = L.marker(
+                [52.5037, 13.3382],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_2be04f01fad6147f3d8ee5cf6f9f2477 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d8d5c2854379abad139935380554159 = $(`<div id="html_6d8d5c2854379abad139935380554159" style="width: 100.0%; height: 100.0%;"><b>Goldies Bar</b><br>Burger</div>`)[0];
+            popup_2be04f01fad6147f3d8ee5cf6f9f2477.setContent(html_6d8d5c2854379abad139935380554159);
+        
+
+        marker_e8cd6231f2bb1dc60017b0bf636e558f.bindPopup(popup_2be04f01fad6147f3d8ee5cf6f9f2477)
+        ;
+
+        
+    
+    
+            marker_e8cd6231f2bb1dc60017b0bf636e558f.bindTooltip(
+                `<div>
+                     Goldies Bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c11770df3f47c5f871d899595443200 = L.marker(
+                [52.5205, 13.4095],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_94baa632aa6b63fd484c222aafe4ccfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2022d895355a11ad9e1681f8dcc8facf = $(`<div id="html_2022d895355a11ad9e1681f8dcc8facf" style="width: 100.0%; height: 100.0%;"><b>Paradise of Croissants Berlin Mitte</b><br>Final Spot</div>`)[0];
+            popup_94baa632aa6b63fd484c222aafe4ccfb.setContent(html_2022d895355a11ad9e1681f8dcc8facf);
+        
+
+        marker_6c11770df3f47c5f871d899595443200.bindPopup(popup_94baa632aa6b63fd484c222aafe4ccfb)
+        ;
+
+        
+    
+    
+            marker_6c11770df3f47c5f871d899595443200.bindTooltip(
+                `<div>
+                     Paradise of Croissants Berlin Mitte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddb0c7d27471569425e83143c04dd80b = L.marker(
+                [52.5147, 13.2394],
+                {}
+            ).addTo(marker_cluster_e0ed2b02d78a7fe4bf7ed6c805b6929d);
+        
+    
+        var popup_58bd46da0366d8bc2581680711893731 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c7dbda2a40fd3c57a7c33d0d6c0bb15 = $(`<div id="html_9c7dbda2a40fd3c57a7c33d0d6c0bb15" style="width: 100.0%; height: 100.0%;"><b>Olympiastadion Berlin</b><br>Saturday Evening</div>`)[0];
+            popup_58bd46da0366d8bc2581680711893731.setContent(html_9c7dbda2a40fd3c57a7c33d0d6c0bb15);
+        
+
+        marker_ddb0c7d27471569425e83143c04dd80b.bindPopup(popup_58bd46da0366d8bc2581680711893731)
+        ;
+
+        
+    
+    
+            marker_ddb0c7d27471569425e83143c04dd80b.bindTooltip(
+                `<div>
+                     Olympiastadion Berlin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4870b88bccbdf8ccb6b5bbe622f7a72e = L.polyline(
+                [[52.4988, 13.432], [52.4978, 13.4311], [52.4985, 13.4348], [52.5012, 13.4248], [52.4899, 13.3888], [52.5147, 13.2394]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_9bd7decaa78780d91306bd530055e74c);
+        
+</script>
+</html>
